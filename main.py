@@ -14,7 +14,7 @@ feature_vectors, cluster_ids = extractor.extract_data(voxTimit_small)
 # for SCDSbest (TIMIT full dataset with VGGVox features [1]) set espsilon=1e-7 and cutoff=-0.67
 dos = ds.DominantSetClustering(feature_vectors=feature_vectors, speaker_ids=cluster_ids,
                                metric='cosine', dominant_search=False,
-                               epsilon=1e-7, cutoff=-0.67)
+                               epsilon=1e-6, cutoff=-0.1)
 
 dos.apply_clustering()
 mr, ari, acp = dos.evaluate()
