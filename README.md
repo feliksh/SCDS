@@ -1,5 +1,5 @@
 # SCDS
-Code for Speaker Clustering using Dominant Sets
+Code for paper "Speaker Clustering using Dominant Sets"
 
 Here you can find the basic implementation of Dominant Sets together with the methods for evaluation, as described in [1] (MR, ACP, ARI).
 
